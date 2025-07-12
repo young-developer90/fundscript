@@ -1,0 +1,17 @@
+def main() then
+    print "Enter your name:"
+    iread "Name: "
+    let name := _
+    print "Hello,"
+    print name
+
+    unsafe asm """
+        mov eax, 2
+        mov ebx, 3
+        add eax, ebx
+    """
+
+    print "EAX calculation done."
+
+    return
+end
